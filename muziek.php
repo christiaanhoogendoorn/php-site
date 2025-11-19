@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch - DE KLEINE OPSTAND</title>
+    <title>Muziek - DE KLEINE OPSTAND</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="page-bg">
+<!-- HERO SECTION -->
+<section class="hero">
     <picture>
         <!-- Mobile portrait -->
         <source media="(max-width: 768px)" srcset="images/muziek-portrait.jpg">
-        <!-- Default desktop landscape -->
+        <!-- Desktop landscape -->
         <img src="images/muziek-landscape.jpg" alt="Muziek Background" class="page-bg-img">
     </picture>
 
@@ -27,7 +28,6 @@
             <a href="merch.php">MERCH</a>
         </div>
 
-
         <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
@@ -35,13 +35,35 @@
         </div>
     </div>
 
-    <!-- Page content -->
-    <div class="content">
+    <div class="hero-content">
         <h1>MUZIEK</h1>
     </div>
+</section>
 
-</div>
+<!-- MAIN CONTENT -->
+<section class="main-content">
+    <p>Luister naar onze muziek op Spotify, Tidal en andere platforms.</p>
+    <p>Nieuwe releases en live-opnames vind je hieronder.</p>
+    <p>Volg ons voor updates en aankondigingen!</p>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-nav">
+        <a href="over.php">OVER</a>
+        <a href="muziek.php">MUZIEK</a>
+        <a href="shows.php">SHOWS</a>
+        <a href="merch.php">MERCH</a>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://open.spotify.com" target="_blank">Spotify</a>
+        <a href="https://tidal.com" target="_blank">Tidal</a>
+    </div>
+</footer>
+
+<!-- HAMBURGER MENU SCRIPT -->
 <script>
 const hamburger = document.getElementById('hamburger');
 const links = document.getElementById('mobileLinks');

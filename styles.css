@@ -169,3 +169,67 @@
     left: 0;
     z-index: -1; /* behind banner and content */
 }
+
+
+/* ========== HERO SECTION (TOP) ========== */
+
+.hero {
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+/* Title inside hero */
+.hero-content {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-family: 'Druk-Medium-Trial';
+}
+
+
+/* ========== MAIN CONTENT SECTION ========== */
+
+.main-content {
+    background: white;
+    color: black;
+    padding: 60px 20px;
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: 'DIN-Light-Regular';
+    margin-top: 0;
+}
+
+
+/* ========== FOOTER ========== */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-nav,
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-nav a,
+.footer-social a {
+    margin: 0 15px;
+}
+
+
+/* Hamburger and banner styling from before will still work */
