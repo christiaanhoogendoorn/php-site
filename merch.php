@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour - De Kleine Opstand</title>
+    <title>Merch - DE KLEINE OPSTAND</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="page-bg" style="background-image: url('tour.jpg');">
+<div class="page-bg" style="background-image: url('merch.jpg');">
 
     <!-- Banner -->
     <div class="banner">
-        <div class="title">De Kleine Opstand</div>
-
-        <div class="links" id="mobileLinks">
-            <a href="index.php">Home</a>
-            <a href="bio.php">Bio</a>
-            <a href="tour.php">Tour</a>
+        <div class="title">DE KLEINE OPSTAND</div>
+           <div class="links" id="mobileLinks">
+            <a href="over.php">OVER</a>
+            <a href="muziek.php">MUZIEK</a>
+            <a href="shows.php">SHOWS</a>
         </div>
 
+
         <div class="hamburger" id="hamburger">
+            <div></div>
             <div></div>
             <div></div>
             <div></div>
@@ -29,7 +30,7 @@
 
     <!-- Page content -->
     <div class="content">
-        <h1>Tour De Kleine Opstand</h1>
+        <h1>MERCH</h1>
     </div>
 
 </div>

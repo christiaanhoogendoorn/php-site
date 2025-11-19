@@ -18,11 +18,6 @@
     z-index: 10;
 }
 
-.title {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 /* Desktop links */
 .links {
     display: flex;
@@ -77,6 +72,7 @@
     }
 
     .links a {
+        font-family: 'DIN-Light-Regular';
         padding: 10px 0;
         color: white;
         text-decoration: none;
@@ -91,6 +87,18 @@
 }
 
 
+/* Larger title only on desktop */
+@media screen and (min-width: 769px) {
+    .title {
+        font-size: 96px; /* adjust desktop size */
+    }
+    .links a {
+        font-family: 'DIN-Light-Regular';
+        font-size: 80px;  /* larger for desktop */
+        font-weight: 700; /* optional: bolder on desktop */
+    }
+}
+
 /* --- Page content --- */
 .content {
     height: calc(100vh - 60px);
@@ -99,4 +107,39 @@
     align-items: center;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+
+@font-face {
+    font-family: 'Druk-Medium-Trial';
+    src: url('fonts/Druk-Medium-Trial.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk-Medium';
+    src: url('fonts/Druk-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN-Light-Regular';
+    src: url('fonts/DIN-Light-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.content {
+    font-family: 'Druk-Medium-Trial', sans-serif;
+}
+
+.title {
+    font-family: 'MainFont', sans-serif;  /* your custom font */
+    font-size: 24px;                       /* mobile default */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;                 /* remove underline */
 }

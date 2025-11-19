@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - DE KLEINE OPSTAND</title>
+    <title>Bio - DE KLEINE OPSTAND</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="page-bg" style="background-image: url('home.jpg');">
+<div class="page-bg" style="background-image: url('bio.jpg');">
 
     <!-- Banner -->
     <div class="banner">
-        <a href="index.php" class="title">DE KLEINE OPSTAND</a> 
+        <div class="title">DE KLEINE OPSTAND</div>
 
-        <div class="links" id="mobileLinks">
+           <div class="links" id="mobileLinks">
             <a href="over.php">OVER</a>
             <a href="muziek.php">MUZIEK</a>
             <a href="shows.php">SHOWS</a>
             <a href="merch.php">MERCH</a>
         </div>
 
+
         <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
             <div></div>
-            <div></div>0
         </div>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        <h1>Welcome to Home Page</h1>
+        <h1>OVER</h1>
     </div>
 
 </div>
