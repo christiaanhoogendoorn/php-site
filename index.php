@@ -15,8 +15,9 @@
         <div class="title">De Kleine Opstand</div>
 
         <div class="links" id="mobileLinks">
-            <a href="index.php">Home</a>
-            <a href="bio.php">Bio</a>
+            <a href="index.php">HOME</a>
+            <a href="bio.php">BIO</a>
+            <a href="tour.php">TOUR</a>
         </div>
 
         <div class="hamburger" id="hamburger">
