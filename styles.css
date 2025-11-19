@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent so image shows behind */
+    background: transparent; /* fully transparent now */
     color: white;
     position: relative;
     z-index: 10;
@@ -58,21 +58,38 @@
     }
 
     .links {
-        display: none;
         position: absolute;
-        top: 65px;
-        right: 15px;
+        top: 60px;                    /* just below banner */
+        left: 50%;                    /* center horizontally */
+        transform: translateX(-50%);  /* adjust centering */
         flex-direction: column;
-        background: rgba(0,0,0,0.8);
-        padding: 10px 15px;
+        background: rgba(0,0,0,0.8);  /* semi-transparent */
+        padding: 0 15px;
         border-radius: 8px;
         gap: 10px;
+        overflow: hidden;
+        max-height: 0;                /* collapsed by default */
+        opacity: 0;                   /* invisible by default */
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+        z-index: 20;
+        min-width: 150px;             /* optional: prevent too small menu */
+        text-align: center;           /* center text inside links */
+    }
+
+    .links a {
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
     }
 
     .links.active {
-        display: flex;
+        max-height: 500px;            /* large enough to fit links */
+        opacity: 1;
+        padding: 10px 15px;
     }
 }
+
 
 /* --- Page content --- */
 .content {
