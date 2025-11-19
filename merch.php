@@ -8,20 +8,26 @@
 </head>
 <body>
 
-<div class="page-bg" style="background-image: url('merch.jpg');">
+<div class="page-bg">
+    <picture>
+        <!-- Mobile portrait -->
+        <source media="(max-width: 768px)" srcset="images/merch-portrait.jpg">
+        <!-- Default desktop landscape -->
+        <img src="images/merch-landscape.jpg" alt="Home Background" class="page-bg-img">
+    </picture>
 
     <!-- Banner -->
     <div class="banner">
-        <div class="title">DE KLEINE OPSTAND</div>
-           <div class="links" id="mobileLinks">
+        <a href="index.php" class="title">DE KLEINE OPSTAND</a> 
+
+        <div class="links" id="mobileLinks">
             <a href="over.php">OVER</a>
             <a href="muziek.php">MUZIEK</a>
             <a href="shows.php">SHOWS</a>
+            <a href="merch.php">MERCH</a>
         </div>
 
-
         <div class="hamburger" id="hamburger">
-            <div></div>
             <div></div>
             <div></div>
             <div></div>
@@ -30,9 +36,9 @@
 
     <!-- Page content -->
     <div class="content">
-        <h1>MERCH</h1>
+        <h1>MERCH
+        <p>links naar merch</p>
     </div>
-
 </div>
 
 <script>

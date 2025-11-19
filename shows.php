@@ -8,18 +8,25 @@
 </head>
 <body>
 
-<div class="page-bg" style="background-image: url('shows.jpg');">
+<div class="page-bg">
+    <picture>
+        <!-- Mobile portrait -->
+        <source media="(max-width: 768px)" srcset="images/shows-portrait.jpg">
+        <!-- Default desktop landscape -->
+        <img src="images/shows-landscape.jpg" alt="Home Background" class="page-bg-img">
+    </picture>
 
     <!-- Banner -->
     <div class="banner">
-        <div class="title">DE KLEINE OPSTAND</div>
+        <a href="index.php" class="title">DE KLEINE OPSTAND</a> 
 
-           <div class="links" id="mobileLinks">
+        <div class="links" id="mobileLinks">
             <a href="over.php">OVER</a>
             <a href="muziek.php">MUZIEK</a>
             <a href="shows.php">SHOWS</a>
             <a href="merch.php">MERCH</a>
         </div>
+
 
         <div class="hamburger" id="hamburger">
             <div></div>

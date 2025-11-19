@@ -8,7 +8,13 @@
 </head>
 <body>
 
-<div class="page-bg" style="background-image: url('home.jpg');">
+<div class="page-bg">
+    <picture>
+        <!-- Mobile portrait -->
+        <source media="(max-width: 768px)" srcset="images/home-portrait.jpg">
+        <!-- Default desktop landscape -->
+        <img src="images/home-landscape.jpg" alt="Home Background" class="page-bg-img">
+    </picture>
 
     <!-- Banner -->
     <div class="banner">
@@ -25,15 +31,14 @@
             <div></div>
             <div></div>
             <div></div>
-            <div></div>0
         </div>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        <h1>Welcome to Home Page</h1>
+        <h1>OVER</h1>
+        <p>De Kleine Opstand; drie man sterk. Waar Woes en Vinnie in bands als Kinderen Tegen Kinderen, Razzmatazz, R*A*D en Casper speelden, maakte Marco meters als rapper en theatermaker. En hoewel in De Kleine Opstand uit al die bronnen wordt geput, blijft de basis een goeie pot punk. </p>
     </div>
-
 </div>
 
 <script>

@@ -21,7 +21,7 @@
 /* Desktop links */
 .links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .links a {
@@ -50,6 +50,14 @@
 @media screen and (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    .title {
+        font-family: 'DIN-Light-Regular', sans-serif;  /* your custom font */
+        font-size: 24px;                       /* mobile default */
+        font-weight: bold;
+        color: white;
+        text-decoration: none;                 /* remove underline */
     }
 
     .links {
@@ -87,27 +95,42 @@
 }
 
 
-/* Larger title only on desktop */
+/* --- Desktop styles --- */
 @media screen and (min-width: 769px) {
-    .title {
-        font-size: 96px; /* adjust desktop size */
+   .title {
+        font-family: 'DIN-Light-Regular', sans-serif;  /* your custom font */
+        font-size: 96px;                       /* mobile default */
+        font-weight: bold;
+        color: white;
+        text-decoration: none;                 /* remove underline */
     }
+
     .links a {
         font-family: 'DIN-Light-Regular';
         font-size: 80px;  /* larger for desktop */
         font-weight: 700; /* optional: bolder on desktop */
     }
+
+    .content {
+        font-size: 48px;     /* bigger font for desktops */
+    }
+    
 }
 
 /* --- Page content --- */
 .content {
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+
+    text-align: center;      /* center paragraphs */
+    padding: 0 20px;         /* optional padding */
+    box-sizing: border-box;  /* ensure padding doesn't break centering */
 }
+
 
 
 @font-face {
@@ -133,13 +156,16 @@
 
 
 .content {
-    font-family: 'Druk-Medium-Trial', sans-serif;
+    font-family: 'Druk-Medium', sans-serif;
 }
 
-.title {
-    font-family: 'MainFont', sans-serif;  /* your custom font */
-    font-size: 24px;                       /* mobile default */
-    font-weight: bold;
-    color: white;
-    text-decoration: none;                 /* remove underline */
+
+.page-bg-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* behind banner and content */
 }
