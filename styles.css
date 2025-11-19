@@ -1,0 +1,83 @@
+
+/* --- Banner styling --- */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Desktop links */
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger div {
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+/* --- Mobile styles --- */
+@media screen and (max-width: 768px) {
+
+    /* Hamburger shown on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide desktop links initially */
+    .links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 15px;
+        flex-direction: column;
+        background: #333;
+        padding: 10px 15px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+
+    /* Show dropdown when active */
+    .links.active {
+        display: flex;
+    }
+}
+
+/* --- Page content styling --- */
+.content {
+    height: calc(100vh - 60px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
